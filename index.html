@@ -1,13 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0914810ea8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <header class="max-w-screen-xl mx-auto px-16 md:px-28">
+      <div class="flex pt-10 mb-20">
+        <!-- text section -->
+        <div class="space-y-5">
+          <h1 class="text-5xl md:text-7xl">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="text-gray-500 w-3/4">
+            Tea and botanical solutions supplier give optimum satisfaction to
+            your taste buds
+          </p>
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold"
+          >
+            Explore more <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </button>
+        </div>
+        <!-- img section -->
+        <div class="relative">
+          <!-- image -->
+          <div>
+            <img class="w-full" src="images/banner.png" alt="" />
+          </div>
+          <!-- text -->
+          <div
+            class="absolute top-80 md:top-80 lg:top-80 lg:left-20 flex items-center bg-white px-2 py-2 md:px10 lg:py-4 rounded-lg shadow-lg"
+          >
+            <div>
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+            </div>
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust pilot ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto px-16 md:px-28"></main>
+    <footer></footer>
   </body>
 </html>
